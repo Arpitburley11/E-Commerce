@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Single+Day&display=swap'); */
+*{
+  font-family: 'Single Day', cursive;
+  /* font-family: 'Anton', sans-serif; */
+  font-size: 16px;
+}
 /* Navbar */
 .link{
   color: inherit;
@@ -110,19 +117,24 @@
 
 /* Slider */
 
-/* .silder{
+.slider-container {
+  position: relative;
+  width: 100vw;
+  transition: all 1s ease;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
   width: 100%;
   position: relative;
 }
-.container{
-  width: 100%;
+
+.slide img {
+  width: 100%; 
   height: 90vh;
-  border: 1px solid black;
-}
-.container img{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  /* opacity: 0.7; */
+  overflow: hidden;
 }
 .slider-icons{
   width: fit-content;
@@ -142,6 +154,173 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-} */
+  color: black;
+}
 
 
+/* Featured Products */
+.featuredProducts{
+  margin: 60px 200px;
+}
+.fp-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.fp-top h1{
+  flex: 2;
+  text-transform: capitalize;
+}
+.fp-top p{
+  flex: 3;
+  color: gray;
+}
+.fp-bottom{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+/* Card */
+
+.card{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+.c-img{
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.c-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.new-sea{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  color: teal;
+  padding: 4px 4px;
+  z-index: 3;
+  font-weight: 500;
+  font-size: 12px;
+}
+.card h2{
+  font-weight: 500;
+  font-size: 16px;
+}
+.c-prices{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.c-prices h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+.price-tag{
+  display: flex;
+  gap: 3px;
+  margin-right: 20px;
+}
+.cut{
+  text-decoration: line-through;
+  color: #999;
+}
+
+
+/* Categories */
+
+.categories{
+  display: flex;
+  height: 80vh;
+  gap: 10px;
+  margin: 10px;
+}
+.col{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.col-l{
+  flex: 2;
+}
+.row{
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.row-l{
+  width: 100%;
+  /* height: 100%;   */
+  object-fit: cover;
+}
+.row button{
+  position: absolute;
+  width: fit-content;
+  min-width: 10px;
+  height: 35px;
+  padding: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.row img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Contact  */
+.contact{
+  background-color: #2879fe;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper span{
+  text-transform: uppercase;
+}
+.email input{
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.email button{
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.contact-icons{
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
