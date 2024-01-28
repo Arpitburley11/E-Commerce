@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Cart from './Cart';
 
 export default function Navbar() {
+    const [open, setOpen] = useState(false);
     return (
         <div className='navbar'>
             <div className="nav-wrapper">
@@ -44,13 +46,14 @@ export default function Navbar() {
                         <i class="ri-search-line"></i>
                         <i class="ri-user-line"></i>
                         <i class="ri-heart-3-line"></i>
-                        <div className="nav-cart">
+                        <div className="nav-cart" onClick={()=>setOpen(!open)}>
                             <i class="ri-shopping-cart-2-line"></i>
                             <span>0</span>
                         </div>
                     </div>
                 </div>
             </div>
+            {open && <Cart/>}
         </div>
     )
 }

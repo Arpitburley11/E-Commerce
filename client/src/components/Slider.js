@@ -9,7 +9,9 @@ export default function Slider() {
     // '/img/Model5.jpg',
     // '/img/Model6.jpg',
     // '/img/Model7.jpg',
-    '/img/Model8.jpg',
+    // '/img/Model8.jpg',
+    // '/img/fp/fp3.jpg'
+    '/img/sp/sp5.jpg'
   ]
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);

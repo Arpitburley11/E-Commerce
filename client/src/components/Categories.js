@@ -10,7 +10,7 @@ export default function Categories() {
           <button><Link to={'/products/1'} className='link'>Sale</Link></button>
         </div>
         <div className="row">
-          <img src='/img/model4.jpg' alt=''/>
+          <img src='/img/sp/sp5.jpg' alt=''/>
           <button><Link to={'/products/1'} className='link'>Women</Link></button>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Categories() {
           </div>
           <div className="col">
             <div className="row">
-              <img src='/img/model6.jpg' alt=''/>
+              <img src='/img/sp/sp4.jpg' alt=''/>
               <button><Link to={'/products/1'} className='link'>Accessories</Link></button>
             </div>
           </div>
